@@ -19,7 +19,7 @@ An App to Plan Roadtrips
 | Database | H | 4hr |  |||
 | Routes | H | 2hrs |  |||
 | Controllers | H | 3hrs |  |||
-| Seed | H | 1hrs|  |1hr||
+| Seed | H | 1hrs|  |||
 | Deployment | H | 2hrs |  |  ||
 | Install and set up react router | H | 0.5hrs |  |||
 | Switch, Links, Routes | H | 2hrs | | ||
