@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Trips from "./pages/Trips";
 import React, {useEffect, useState} from 'react';
 
-import store, {getTrips} from ./store;
+import store, {getTrips} from './store';
 
 // const URL = "http://localhost:8000"
 function App() {
