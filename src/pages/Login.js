@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react"
 import {Link} from "react-router-dom"
+import store, {getTrips} from "../store"
 
 const Login = (props) =>{
 
-      //state to contain list of trips
+    useEffect(()=>{store.dispatch(getTrips)},[])
+    console.log(store.getState())
 
     return (
       <div>

@@ -5,7 +5,7 @@ import react, {useEffect} from 'react'
 import thunkMiddleware from 'redux-thunk'
 
 //get plant data from database
-const url = 'http:/localhost:8000'
+const url = 'https://finalbackendcls.herokuapp.com'
 
 //idk what this does but it's in the documentation - requires further reading
 const middlewareEnhancer = applyMiddleware(thunkMiddleware)
@@ -30,7 +30,7 @@ export function removeTrip (trip) {
 
 //get data from database     written based on documentation - requires investigation             
 export async function getTrips(dispatch, getState){
-    const response = await fetch (url +'/Roadtrip/')
+    const response = await fetch (url +'/trips/')
     const data = await response.json()
     dispatch({type:'get', payload: data})
 }
