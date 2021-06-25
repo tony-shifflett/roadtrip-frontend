@@ -6,13 +6,25 @@ import axios from 'axios'
 
 
 const Trips = (props)=>{
-  const tripsExist=()=>{
-    return (
-      <>
-        <h1>Trips</h1>
-      </>
-    ) 
-  }
+
+  useEffect(()=>{
+    axios.get('https://finalbackendcls.herokuapp.com/trips')
+      .then(res => {
+        props.setTripList(res.data)
+      })
+  },[]);
+
+  const displayTrips = ()=>{
+    console.log(props.tripList)
+    return(
+        <>
+            <h1>Road Trips</h1>
+            { props.tripList.map( (trip)=>{return (<Trip trip={trip} setTripList={props.setTripList}/>)} ) }
+            <Link to="/addtrip"> <button>Add a Trip</button> </Link>
+        </>
+    )
+
+}
       
 
 
@@ -24,7 +36,7 @@ const Trips = (props)=>{
     );
   }
 
-  return tripsExist()
+  return displayTrips()
 
 
 
