@@ -7,18 +7,12 @@ import React, {useEffect, useState} from 'react';
 
 import store, {getTrips} from './store';
 
-// const URL = "http://localhost:8000"
-function App() {
-  //state to contain list of trips
-  // const [trips, setTrips] = React.useState([])
 
-  // const getTrips = async ()=>{
-  //   const response = await fetch(URL + "/Roadtrip/")
-  //   const data = await response.json()
-  //   console.log(data)
-  //   setTrips(data)
-  // }
-  // useEffect(()=>{getTrips()},[]);
+
+function App() {
+
+const url = 'https://finalbackendcls.herokuapp.com'
+
   return (
     <div className="App">
       <Switch>

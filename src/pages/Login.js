@@ -1,12 +1,9 @@
 import React, {useState, useEffect} from "react"
 import {Link} from "react-router-dom"
-import store, {getTrips} from "../store"
 
 const Login = (props) =>{
 
-    useEffect(()=>{store.dispatch(getTrips)},[])
-    console.log(store.getState())
-
+   console.log(trips)
     return (
       <div>
         <h1>RoadTrip</h1>
