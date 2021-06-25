@@ -26,6 +26,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={(rp) => <Login{...rp}/>}/>
         <Route exact path="/mytrips" render={(rp) => <Trips{...rp} tripList={tripList} setTripList={setTripList}/>}/>
+        <Route exact path="/addtrip" render={(rp) => <Add{...rp} tripList = {tripList} setTripList={setTripList}/>}/>
       </Switch>
     </div>
   );
