@@ -9,7 +9,7 @@ const Trip = (props) => {
     const url ='https://finalbackendcls.herokuapp.com/trips'
 
     const deleteHandler = (id) =>{
-        axios.delete( url +`/${id}`)
+        axios.delete( url, props.trip)
 
         axios.get(url)
         .then(res => {
