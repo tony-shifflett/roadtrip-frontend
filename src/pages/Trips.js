@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react"
 import { Link } from 'react-router-dom'
 import Trip from '../components/Trip'
+import axios from 'axios'
 
 
 
