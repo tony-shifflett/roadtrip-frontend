@@ -11,7 +11,7 @@ const Trip = (props) => {
     const deleteHandler = (id) =>{
         axios.delete( url +`/${id}`)
 
-        axios.get(devUrl)
+        axios.get(url)
         .then(res => {
           props.setTripList(res.data)
         })
