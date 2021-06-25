@@ -5,7 +5,7 @@ import {Route, Link, Switch} from "react-router-dom";
 import axios from 'axios'
 import Login from "./pages/Login";
 import Trips from "./pages/Trips";
-
+import Add from './pages/Add'
 
 
 
