@@ -5,10 +5,11 @@ import {Link} from 'react-router-dom'
 
 const Add = (props)=>{
 
-
+    const tripList = props.tripList
     const [name, setName] = useState('')
     const [startpoint, setStartpoint] = useState('')
     const [endpoint, setEndpoint] = useState('')
+    
 
     const addHandler = () => {
       

@@ -8,8 +8,8 @@ const Trip = (props) => {
 
     const url ='https://finalbackendcls.herokuapp.com/trips'
 
-    const deleteHandler = (id) =>{
-        axios.delete( url, props.trip)
+    const deleteHandler = (name) =>{
+        axios.delete( url +`/${name}`)
 
         axios.get(url)
         .then(res => {
@@ -24,7 +24,7 @@ const Trip = (props) => {
             <h1>{props.trip.name}</h1>
             <p>From {props.trip.startpoint} to {props.trip.endpoint}</p>
             <ButtonGroup>
-                <Button size="sm" style={{marginRight: "5px"}} onClick={()=>{deleteHandler(props.trip.id)}}>Delete</Button>
+                <Button size="sm" style={{marginRight: "5px"}} onClick={()=>{deleteHandler(props.trip.name)}}>Delete</Button>
                 <Button size="sm">Edit</Button>
             </ButtonGroup>
         </Card>
