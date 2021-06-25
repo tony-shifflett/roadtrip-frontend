@@ -19,7 +19,7 @@ const Trips = (props)=>{
     return(
         <>
             <h1>Road Trips</h1>
-            { props.tripList.map( (trip)=>{return (<Trip trip={trip} setTripList={props.setTripList}/>)} ) }
+            { props.tripList.map( (trip)=>{return (<Trip trip={trip} setTripUpdate={props.setTripUpdate} setTripList={props.setTripList}/>)} ) }
             <Link to="/addtrip"> <button>Add a Trip</button> </Link>
         </>
     )
