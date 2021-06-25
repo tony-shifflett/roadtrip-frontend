@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" render={(rp) => <Login{...rp}/>}/>
+        <Route exact path="/" render={(rp) => <Login{...rp} setTripList={setTripList}/>}/>
         <Route exact path="/mytrips" render={(rp) => <Trips {...rp} setTripUpdate={setTripUpdate} tripList={tripList} setTripList={setTripList}/>}/>
         <Route exact path="/addtrip" render={(rp) => <Add {...rp} tripList = {tripList} setTripList={setTripList}/>}/>
         <Route exact path="/update" render={(rp) => <Update {...rp} tripUpdate={tripUpdate} tripList = {tripList} setTripList={setTripList}/>}/>
