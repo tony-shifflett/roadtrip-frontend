@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Trip from '../components/Trip'
 
 
-// import store, {getTrips} from  '../store'
 
 const Trips = (props)=>{
   const tripsExist=()=>{

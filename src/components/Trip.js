@@ -1,5 +1,4 @@
 import React from 'react'
-import store, {removeTrip} from '../store'
 
 const Trip = (props)=>{
 

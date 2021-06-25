@@ -5,8 +5,6 @@ import Login from "./pages/Login";
 import Trips from "./pages/Trips";
 import React, {useEffect, useState} from 'react';
 
-import store, {getTrips} from './store';
-
 
 
 function App() {
